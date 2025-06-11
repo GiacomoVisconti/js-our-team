@@ -17,7 +17,7 @@ function insert_markup(teamMembers,members_card_El){
                     <div class="col-4">
                         <img class="img-fluid w-100" src="${img}" alt="Immagine membro">
                     </div>
-                    <div class="col-8 bg-dark text-light px-3 fs-6">
+                    <div class="col-8 bg-dark text-light px-3 fs-6 d-flex flex-column justify-content-center">
                         <h4> ${name} </h4>
                         <p> ${role} </p>
                         <span class="text-primary fs-6"> ${email} </span>
@@ -85,6 +85,7 @@ const img_member_El = document.getElementById('img_member')
 //Salvo il template dello stile della card da inserire in una variabile
 
 
+insert_markup(teamMembers,members_card_El)
             
 console.table(teamMembers)
 
