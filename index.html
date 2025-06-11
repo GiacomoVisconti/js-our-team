@@ -23,17 +23,63 @@
     <header>
         <!-- place navbar here -->
     </header>
-    <main>
+    <main class="container">
         <h1 class="text-center my-5 text-danger">Meet our Team</h1>
         <p class="text-center mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem excepturi dolore
             sequi?
             Rerum dolores
             aspernatur aliquam esse quasi praesentium quo quae voluptatibus vitae obcaecati, minima, beatae, odit ullam
-            unde sunt.</p>
+            unde sunt.
+        </p>
 
 
+        <div id="member_input" class="mb-5">
 
-        <div class="row mx-1" id="members-cards">
+            <h2 class="text-center mt-5 text-warning">Inserisci un nuovo membro del team</h2>
+            <p class="text-center">Compila i campi richiesti e premi il bottone</p>
+
+            <form class="m-3">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Nome e Cognome</label>
+                    <input type="text" class="form-control" name="Name" id="name_surname_member"
+                        aria-describedby="NameSurname_help" placeholder="Name Surname" required />
+                    <small id="NameSurname_help" class="form-text text-muted">Inserisci qui il tuo nome e
+                        cognome</small>
+                </div>
+                <div class="mb-3">
+                    <label for="Role" class="form-label">Il tuo ruolo</label>
+                    <input type="text" class="form-control" name="Role" id="role_member"
+                        aria-describedby="RoleMember_help" placeholder="Role" required />
+                    <small id="RoleMember_help" class="form-text text-muted">Inserisci qui il tuo Ruolo in
+                        azienda</small>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="email_member"
+                        aria-describedby="email_help" placeholder="Email" required />
+                    <small id="email_help" class="form-text text-muted">Inserisci qui la tua E-mail
+                        aziendale</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="img" class="form-label">Percorso immagine</label>
+                    <input type="text" class="form-control" name="img" id="img_member" aria-describedby="img_help"
+                        placeholder="Percorso Immagine" required />
+                    <small id="img_help" class="form-text text-muted">Inserisci qui la tua immagine del profilo</small>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <button id="member_submit" type="submit" class="btn btn-primary">
+                        Inizia a far parte del Team
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <hr>
+
+        <div class="row my-5" id="members-cards">
 
         </div>
 
